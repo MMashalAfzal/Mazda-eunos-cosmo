@@ -1,0 +1,294 @@
+*{
+margin: 0;
+padding: 0;
+border: border-box;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background: rgba(0,0,0,0);
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+.title{
+position: relative;
+z-index: 10;
+text-align: center;
+color: white;
+padding-top: 100px;
+font-size: 65px;
+text-shadow: 5px 5px #9c8f02;
+}
+
+
+
+
+/* Style the video: 100% width and height to cover the entire window 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+padding-top: 100px;
+}*/
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-background .content {
+  position: relative;
+  z-index: 1;
+	background: none;
+	
+  /* Add styling for your content here */
+}
+
+
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 95%;
+  height: 90px;
+	padding-bottom: 65px;
+	padding-left: 40px;
+
+}
+
+h1{
+	padding-top: 20px;
+	text-decoration: underline;
+		color: #9c8f02;
+
+
+}
+
+p{
+padding-bottom: 5px;
+line-height: 1.5;
+
+}
+
+#myBtn {
+  position: relative;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #d6c802;
+  font-size: 20px;
+  color: #d6c802;
+  /*padding: 20px;*/
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+
+#myBtn:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#myBtn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+#Btn {
+  position: relative;
+  background-color: black;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #9c8f02;
+  font-size: 20px;
+  color: #9c8f02;
+  /*padding: 20px;*/
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#Btn:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#Btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.about{
+width: 100%;	
+height: 600px;
+background-color: black;
+
+
+}
+
+.about .box-1{
+width: 20%;	
+height: 200px;
+transform: skew(-50deg);
+background-color: #9c8f02;
+}
+
+.about .imgs{
+width: 50%;	
+height: 400px;
+background-image: url("Mazda_Eunos_Cosmo-1.jpg");
+border: 1px solid #9c8f02;
+border-radius: 10px;
+background-size: cover;
+margin-top: 50px;
+float: right;
+box-shadow: 5px 2px 15px 15px #9c8f02;
+}
+
+.about .text-1{
+color: white;
+font-size: 18px;
+font-weight: bold;
+margin-top: 70px;
+margin-left: 10px;
+
+}
+
+.Btn-1 {
+  position: relative;
+  background-color: black;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #9c8f02;
+  font-size: 20px;
+  color: #9c8f02;
+  /*padding: 20px;*/
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 350px;
+}
+
+.Btn-1:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.Btn-1:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
